@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/default_image1"/>
+
+    <TextView
+        android:id="@+id/settings_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Display Name"
+        android:textColor="#f4f0f0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_display_name"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/default_status"
+        android:textColor="#f4f0f0" />
+
+    <Button
+        android:id="@+id/settings_image_btn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp"
+        android:backgroundTint="#f4f0f0"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Change Image"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/settings_status_btn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Change Status"
+        android:textColor="#f4f0f0" />
+
+   <!-- <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        app:srcCompat="@drawable/add_icon2" />-->
+
+</RelativeLayout>
